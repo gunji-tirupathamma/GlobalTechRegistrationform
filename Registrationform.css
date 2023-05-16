@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-image: url("https://wallpapertag.com/wallpaper/full/7/3/8/350870-amazing-website-background-1920x1080.jpg");
+    background-size: cover;
+    padding: 10px;
+    width: 120%;
+}
+
+.form-container {
+    background-color: #faffff;
+    background-size: cover;
+    padding: 10px;
+    width: 100%;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.first-name-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .first-name-container {
+        flex-direction: row;
+    }
+
+}
+
+.heading {
+    align-self: center;
+    font-family: italic;
+    color: #003e6b;
+    font-weight: bold;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.input {
+    border: 3px;
+    background-color: #c3c5c7;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.radio {
+    border: 3px;
+    background-color: #c3c5c7;
+}
+
+.subject {
+    background-color: #c3c5c7;
+    border: 3px;
+    height: 40px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+    font-family: roboto;
+}
+
+.show-container {
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f8ffa8;
+    color: #fa3c45;
+
+}
+
+.details-container {
+    display: none;
+    flex-flow: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.script-value {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #6f78f7;
+}

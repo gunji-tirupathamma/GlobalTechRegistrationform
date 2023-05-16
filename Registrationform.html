@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Registrationform.css">
+</head>
+
+<body>
+    <div class="bg-container">
+        <div id="formcontainere" class="form-container">
+            <h1 class="heading">Registration Form</h1>
+            <form id="myform">
+                <div class="name-container">
+                    <b class="mr-3">Name</b>
+                    <div class="first-name-container">
+                        <div class="d-flex flex-column mr-3">
+                            <input type="text" id="firstname" class="input" style="width: 30vw;">
+                            <label for="firstname">First Name</label>
+                            <p id="firstnameerror" class="error"></p>
+                        </div>
+                        <div class="d-flex flex-column mr-3">
+                            <input type="text" id="lastname" class="input" style="width: 30vw;">
+                            <label for="lastname">Last Name</label>
+                            <p id="lastnameerror" class="error"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="name-container">
+                    <b class="mr-2">College Name</b>
+                    <input id="collegename" type="text" class="input" style="width: 40%;">
+                    <p id="collegeenameerror" class="error"></p>
+                </div>
+                <div class="name-container">
+                    <b class="mr-3">Gender</b>
+                    <div class="first-name-container">
+                        <div class="d-flex flex-row mr-3">
+                            <input type="radio" id="male" value="Male" name="gender">
+                            <label class="ml-1">Male</label>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <input type="radio" id="female" value="Female" name="gender">
+                            <label class="ml-1">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-container">
+                    <b class="mr-3">Email</b>
+                    <input type="text" id="email" class="input" style="width: 40%;">
+                    <p id="emailerror" class="error"></p>
+                </div>
+                <div class="name-container">
+                    <b class="mr-3">Phone</b>
+                    <div class="first-name-container">
+                        <div class="d-flex flex-column mr-3">
+                            <input type="text" id="areacode" class="input" style="width: 30vw;">
+                            <label>Area Code</label>
+                            <p id="areacodeerror" class="error"></p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <input type="text" id="phonenumber" class="input" style="width: 30vw;">
+                            <label>Phone Number</label>
+                            <p id="pnonenumerror" class="error"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="name-container">
+                    <b class="mr-3">Subject</b>
+                    <select id="subjects" class="subject">
+                        <option value="Active">Choose option</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="sql">SQL</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+                <div class="m-3">
+                    <button id="registerbtn" class="btn btn-danger">Register</button>
+                </div>
+            </form>
+
+        </div>
+        <div id="show-container" class="show-container">
+            <p>You are Successfully Registered !</p>
+            <button id="showdetailsbtn" class="btn btn-success" style="width: 150px;">Show Details</button>
+            <div id="detailscontainer" class="details-container">
+                <b>Name: <span id="display-name" class="script-value"></span> </b>
+                <b>Gender: <span id="display-gender" class="script-value"></span> </b>
+                <b>college Name: <span id="display-college" class="script-value"></span> </b>
+                <b>Email: <span id="display-email" class="script-value"></span> </b>
+                <b>Phone Number: <span id="display-phonenum" class="script-value"></span></b>
+                <b>Subject: <span id="display-subject" class="script-value"></span></b>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="Registrationform.js"></script>
+</body>
+
+</html>
